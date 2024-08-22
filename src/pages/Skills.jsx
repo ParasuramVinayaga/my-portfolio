@@ -7,7 +7,7 @@ export default function Skills() {
             <div className="flex flex-row gap-2">
                 <Skill 
                 heading="Laravel" 
-                description="I have one year of experience in laravel PHP.
+                description="I have an year of experience in laravel PHP.
                     Worked on developing rest api's and
                     build an admin panel for an ecommerce application,
                     a single page application using laravel to monitor and manage workflow.
@@ -16,7 +16,7 @@ export default function Skills() {
                 />
                 <Skill 
                 heading="Postgres" 
-                description="I have one year of experience in postgres, with which
+                description="I have an year of experience in postgres, with which
                     I can perform from the most basic to complex database queries.
                     Capable of working with multi-tenancy database, execute queries at an optimal time,
                     Capable of designing tables with appropriate constrains to ensure data consistency." 
