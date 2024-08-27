@@ -8,6 +8,7 @@ import {
   Routes
 } from "react-router-dom";
 import NavBar from './components/NavBar';
+import Projects from './pages/Projects';
 
 function App() {
 
@@ -41,6 +42,7 @@ function App() {
                 <div className="w-full flex flex-col gap-2">
                   <Routes>
                     <Route path="/skills" element={<Skills />} />
+                    <Route path="/projects" element={<Projects />} />
                   </Routes>
                 </div>
               </div>
