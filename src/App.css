@@ -29,6 +29,10 @@
   animation: fadeIn 4s ease;
 }
 
+.bg-card-400 {
+  background-color: rgb(51 64 89 / var(--tw-bg-opacity));
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;

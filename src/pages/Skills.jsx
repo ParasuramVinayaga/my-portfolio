@@ -25,6 +25,14 @@ export default function Skills() {
             </div>
             <div className="flex flex-row gap-2">
                 <Skill 
+                heading="Java" 
+                description="I have six months of experience in core java, I am familiar with the concepts of collections, 
+                wrapper classes and multithreading, have built a console application for booking train tickets. 
+                Capable of coding with SOLID principles in java. Capable implementing different data structures like stack, queue, 
+                linkedlist, graph using java." 
+                imageSource="https://ik.imagekit.io/laracasts/series/thumbnails/svg/advanced-eloquent.svg?tr=w-190"
+                />
+                <Skill 
                 heading="HTML & Tailwind CSS" 
                 description="Besides being a backend developer, I have quite a few knowledge in both HTML and CSS,
                     with which I can build a fairly clean and simple frontend,
@@ -32,6 +40,8 @@ export default function Skills() {
                     and laravel as backend. Besides that the portfolio your looking now is an example of my proficiency." 
                 imageSource="https://ik.imagekit.io/laracasts/series/thumbnails/svg/modern-css-workflow.svg?tr=w-190"
                 />
+            </div>
+            <div className="flex flex-row gap-2">
                 <Skill 
                 heading="React" 
                 description="I'm a newbie to react, built a basic todo application which is used to manage your day to day tasks efficiently.
