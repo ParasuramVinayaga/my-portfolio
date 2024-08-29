@@ -9,12 +9,13 @@ import {
 } from "react-router-dom";
 import NavBar from './components/NavBar';
 import Projects from './pages/Projects';
+import Education from './pages/Education';
 
 function App() {
 
   return (
-    <main className="page-dark p-5 overflow-hidden">
-      <div className="flex items-start min-h-screen flex-col-reverse gap-4 lg:flex-row">
+    <main className="page-dark p-5 h-screen overflow-y-hidden">
+      <div className="flex items-start flex-col-reverse gap-4 lg:flex-row">
         <div className="lg:w-80 flex flex-col gap-2 items-center">
           <div className="w-full bg-card text-nowrap rounded-xl py-3 px-5">
             <h2 className="text-center text-2xl uppercase font-semibold leading-tight">Portfolio</h2>
@@ -43,6 +44,7 @@ function App() {
                   <Routes>
                     <Route path="/skills" element={<Skills />} />
                     <Route path="/projects" element={<Projects />} />
+                    <Route path="/education" element={<Education />} />
                   </Routes>
                 </div>
               </div>

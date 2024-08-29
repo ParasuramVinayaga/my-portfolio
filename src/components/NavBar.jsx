@@ -7,7 +7,6 @@ export default function NavBar() {
             <NavLink to="/projects" />
             <NavLink to="/skills" />
             <NavLink to="/education" />
-            <NavLink to="/hobbies" />
         </nav>
     )
 }
