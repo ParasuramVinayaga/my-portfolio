@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import profile from './images/profile.jpg';
 import Skills from './pages/Skills';
@@ -12,9 +12,10 @@ import Projects from './pages/Projects';
 import Education from './pages/Education';
 
 function App() {
+  const [contactForm, setContactForm] = useState(false)
 
   return (
-    <main className="page-dark p-5 h-screen overflow-y-hidden">
+    <main className="page-dark p-5 h-screen overflow-hidden">
       <div className="flex items-start flex-col-reverse gap-4 lg:flex-row">
         <div className="lg:w-80 flex flex-col gap-2 items-center">
           <div className="w-full bg-card text-nowrap rounded-xl py-3 px-5">
@@ -32,14 +33,25 @@ function App() {
             </p>
           </div>
           <div className="w-full flex justify-center align-middle">
-            <button className="flex-1 btn-primary rounded-xl px-5 py-2">Contact me</button>
+            <button className="flex-1 btn-primary rounded-xl px-5 py-2" onClick={() => setContactForm(!contactForm)}>Contact me</button>
           </div>
         </div>
         <div className="lg:flex-1 gap-2">
           <Router>
             <div className="flex flex-col gap-2">
+              { contactForm && (
+                <div className="absolute top-1/3 right-1/3 z-10 w-1/3">
+                  <form className="bg-card flex flex-col gap-2 p-2 rounded">
+                    <button className="flex justify-end" onClick={() => setContactForm(!contactForm)}>&times;</button>
+                    <input type="text" placeholder="Name" className="bg-card-400 p-2 rounded text-grey-600" />
+                    <input type="text" placeholder="Email" className="bg-card-400 p-2 rounded text-grey-600" />
+                    <textarea placeholder="Message" rows="5" className="bg-card-400 p-2 rounded text-grey-600" />
+                    <button className="flex-1 btn-primary rounded-xl px-5 py-2">Submit</button>
+                  </form>
+                </div>
+              )}
               <NavBar />
-              <div className="h-screen overflow-auto">
+              <div className="h-screen overflow-auto pb-24">
                 <div className="w-full flex flex-col gap-2">
                   <Routes>
                     <Route path="/skills" element={<Skills />} />

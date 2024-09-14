@@ -41,3 +41,7 @@
     opacity: 1;
   }
 }
+
+.clip-path-circle {
+  clip-path: circle();
+}
