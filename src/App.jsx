@@ -71,6 +71,7 @@ function App() {
               <div className="h-screen overflow-auto pb-24">
                 <div className="w-full flex flex-col gap-2">
                   <Routes>
+                    <Route path="/" element={<Skills />} />
                     <Route path="/skills" element={<Skills />} />
                     <Route path="/projects" element={<Projects />} />
                     <Route path="/education" element={<Education />} />
