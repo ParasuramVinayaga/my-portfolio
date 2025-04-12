@@ -11,7 +11,8 @@ export default function Skill(props) {
                     </div>
                 </div>
                 <div className="w-full h-full mr-16">
-                    <img src={props.imageSource} alt="bot" className="w-80 absolute"/>
+                    { props.heading == 'Java' && <img src={props.imageSource} alt="bot" className="w-80 absolute left-[60%]"  />}
+                    { props.heading != 'Java' && <img src={props.imageSource} alt="bot" className="w-80 absolute"  />}
                 </div>
             </div>
         </div>

@@ -30,7 +30,7 @@ export default function Skills() {
                 wrapper classes and multithreading, have built a console application for booking train tickets. 
                 Capable of coding with SOLID principles in java. Capable implementing different data structures like stack, queue, 
                 linkedlist, graph using java." 
-                imageSource="https://ik.imagekit.io/laracasts/series/thumbnails/svg/advanced-eloquent.svg?tr=w-190"
+                imageSource="/src/assets/java-icon.svg"
                 />
                 <Skill 
                 heading="HTML & Tailwind CSS" 
