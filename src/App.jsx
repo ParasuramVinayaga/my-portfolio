@@ -15,6 +15,7 @@ import emailjs from 'emailjs-com';
 function App() {
   const [contactForm, setContactForm] = useState(false)
 
+  // Send email
   function sendMail (e) {
     e.preventDefault();
 
