@@ -3,7 +3,7 @@ import './App.css';
 import profile from './images/profile.jpg';
 import Skills from './pages/Skills';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Routes
 } from "react-router-dom";
@@ -72,10 +72,10 @@ function App() {
               <div className="h-screen overflow-auto pb-24">
                 <div className="w-full flex flex-col gap-2">
                   <Routes>
-                    <Route path="my-portfolio/" element={<Skills />} />
-                    <Route path="my-portfolio/skills" element={<Skills />} />
-                    <Route path="my-portfolio/projects" element={<Projects />} />
-                    <Route path="my-portfolio/education" element={<Education />} />
+                    <Route path="/" element={<Skills />} />
+                    <Route path="skills" element={<Skills />} />
+                    <Route path="projects" element={<Projects />} />
+                    <Route path="education" element={<Education />} />
                   </Routes>
                 </div>
               </div>
