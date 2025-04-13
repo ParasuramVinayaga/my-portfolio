@@ -6,7 +6,7 @@ export default function NavLink(props) {
     function pathToTitle(path) {
         let formattedPath = path.replace(/^\//, '');
         
-        return formattedPath.charAt(0).toUpperCase() + formattedPath.slice(1).toLowerCase();
+        return formattedPath.slice(13).toLowerCase();
     }
 
     return (
